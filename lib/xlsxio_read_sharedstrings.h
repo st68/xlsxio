@@ -23,6 +23,14 @@ const char* sharedstringlist_get (struct sharedstringlist* sharedstrings, size_t
 
 ////////////////////////////////////////////////////////////////////////
 
+#ifndef ZIP_RDONLY
+typedef struct zip zip_t;
+typedef struct zip_file zip_file_t;
+#define ZIP_RDONLY 0
+#endif
+
+////////////////////////////////////////////////////////////////////////
+
 struct shared_strings_callback_data {
   XML_Parser xmlparser;
   zip_file_t* zipfile;
