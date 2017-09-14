@@ -11,6 +11,7 @@ obj/
 bin/
 doc/
 CMakeFiles/
+/Makefile
 
 example_xlsxio_read
 example_xlsxio_read_advanced
